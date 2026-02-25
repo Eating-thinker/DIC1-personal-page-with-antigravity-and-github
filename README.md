@@ -6,7 +6,7 @@
 
 ## Demo 連結
 
-👉 [線上示範頁面](https://eating-thinker.github.io/DIC1-personal-page-with-antigravity-and-github/) — 這是這個專案已部署的 GitHub Pages 網站，可以直接點開查看實際效果。{index=0}
+👉 [線上示範頁面](https://eating-thinker.github.io/DIC1-personal-page-with-antigravity-and-github/) — 這是這個專案已部署的 GitHub Pages 網站，可以直接點開查看實際效果。
 
 ---
 
@@ -54,4 +54,5 @@
 ## 作者
 
 Yi-Ting
+
 
