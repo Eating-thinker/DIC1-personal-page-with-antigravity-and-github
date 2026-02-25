@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yi-Ting's Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            transition: transform 0.3s ease;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        p {
+            font-size: 1.5rem;
+            opacity: 0.9;
+        }
+        .time-display {
+            font-weight: bold;
+            font-size: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, Yi-Ting!</h1>
+        <p>The current time is:</p>
+        <p class="time-display" id="time">2026-02-25 15:31:42</p>
+    </div>
+    <script>
+        // Update the time dynamically
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleString('en-US', { 
+                year: 'numeric', 
+                month: '2-digit', 
+                day: '2-digit',
+                hour: '2-digit', 
+                minute: '2-digit', 
+                second: '2-digit',
+                hour12: false
+            });
+            document.getElementById('time').textContent = timeString;
+        }
+        // Update every second
+        setInterval(updateTime, 1000);
+        // Initial call to override static time if JS loads quickly
+        updateTime();
+    </script>
+</body>
+</html>
