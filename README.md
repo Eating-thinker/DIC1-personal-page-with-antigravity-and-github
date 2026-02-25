@@ -4,6 +4,12 @@
 
 ---
 
+## Demo 連結
+
+👉 [線上示範頁面](https://eating-thinker.github.io/DIC1-personal-page-with-antigravity-and-github/) — 這是這個專案已部署的 GitHub Pages 網站，可以直接點開查看實際效果。:contentReference[oaicite:0]{index=0}
+
+---
+
 ## 功能特色
 
 - **動態時間顯示**：每秒更新使用者當前時間。  
@@ -31,19 +37,9 @@
 
 ## 使用方式
 
-1. 將 `index.html` 儲存到本地
-2. 用瀏覽器開啟即可
+1. 將 `index.html` 儲存到本地  
+2. 用瀏覽器開啟即可  
 3. 修改 HTML 中的文字（如 `Hello, Yi-Ting!`）來客製化問候語
-
----
-
-## 範例效果
-
-頁面中心有一個玻璃風格卡片，包含：
-
-- 主標題：`Hello, Yi-Ting!`
-- 說明文字：`The current time is:`
-- 動態更新的時間
 
 ---
 
